@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import SmoothScroll from './components/SmoothScroll'
+import { initScroll3D } from './lib/scroll3d'
 import Nav from './components/Nav'
 import Hero from './sections/Hero'
 import CraftStory from './sections/CraftStory'
@@ -14,6 +16,17 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 
 export default function App() {
+  useEffect(() => {
+    // let sections mount + fonts settle, then wire depth/parallax
+    const t = setTimeout(() => {
+      window.__scroll3dCleanup = initScroll3D()
+    }, 300)
+    return () => {
+      clearTimeout(t)
+      window.__scroll3dCleanup?.()
+    }
+  }, [])
+
   return (
     <>
       <SmoothScroll />

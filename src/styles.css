@@ -115,13 +115,20 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 .section__carpet-inner {
   position: absolute;
   inset: 0;
+  overflow: hidden;
+  /* --reveal goes 0 -> 1 as the roll travels down (set by GSAP).
+     The clip stays locked to the roll; the image layer below parallaxes within it. */
+  clip-path: inset(0 0 calc((1 - var(--reveal, 1)) * 100%) 0);
+  will-change: clip-path;
+}
+.section__carpet-img {
+  position: absolute;
+  inset: -2% 0;
   background-image: var(--carpet-pattern);
   background-size: var(--carpet-scale, 340px);
   background-repeat: var(--carpet-repeat, repeat);
   background-position: var(--carpet-pos, center top);
-  /* --reveal goes 0 -> 1 as the roll travels down (set by GSAP) */
-  clip-path: inset(0 0 calc((1 - var(--reveal, 1)) * 100%) 0);
-  will-change: clip-path;
+  will-change: transform;
 }
 /* legibility scrim over the rug */
 .section__scrim {

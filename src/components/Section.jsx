@@ -69,7 +69,9 @@ export default function Section({
   return (
     <section id={id} ref={ref} className={`section ${className}`} style={style}>
       <div className="section__carpet">
-        <div className="section__carpet-inner" />
+        <div className="section__carpet-inner">
+          <div className="section__carpet-img" />
+        </div>
       </div>
       <div className="section__scrim" />
       {showRoll && (
