@@ -3,12 +3,12 @@ import Reveal from '../components/Reveal'
 import { rugImg } from '../lib/patterns'
 
 const CELLS = [
-  ['m-a', 'kashan'],
-  ['m-b', 'ardabil'],
-  ['m-c', 'heriz'],
-  ['m-d', 'bijar'],
-  ['m-e', 'qom'],
-  ['m-f', 'bidjar'],
+  ['m-a', 'marbles'],
+  ['m-b', 'moroccan'],
+  ['m-c', 'kazak909'],
+  ['m-d', 'teal'],
+  ['m-e', 'ikat'],
+  ['m-f', 'colorblock'],
 ]
 
 export default function Installations() {
@@ -16,8 +16,8 @@ export default function Installations() {
     <Section
       id="installations"
       className="pad"
-      photo="/rugs/isfahan.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.5), rgba(12,5,4,0.68))"
+      photo="/rugs/fw.jpg"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
     >
       <div className="wrap">
         <div className="section-head">

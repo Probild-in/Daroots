@@ -9,13 +9,13 @@ export default function CraftStory() {
     <Section
       id="craft"
       className="pad"
-      photo="/rugs/kashan-silk.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
+      photo="/rugs/medallion.jpg"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.62), rgba(12,5,4,0.8))"
     >
       <div className="wrap split">
         <Reveal>
           <div className="tile" style={{ aspectRatio: '4 / 5' }}>
-            <div className="tile__rug" style={{ '--rug': rugImg('qom') }} />
+            <div className="tile__rug" style={{ '--rug': rugImg('spiral') }} />
             <div className="tile__glow" />
             <span className="tile__tag">On the loom · Bhadohi atelier</span>
             <div className="tile__meta">
@@ -38,7 +38,7 @@ export default function CraftStory() {
           </Reveal>
           <Reveal delay={160}>
             <p className="lede">
-              A carpet is not a fast covering. It is a narrative — woven by hand, tied by hands
+              A carpet is not a fast covering. It is a narrative, woven by hand, tied by hands
               that have learned their art across generations.
             </p>
           </Reveal>

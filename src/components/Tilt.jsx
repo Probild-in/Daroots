@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 
-/* Pointer-driven 3D tilt for cards. Disabled feel on touch is fine —
+/* Pointer-driven 3D tilt for cards. Disabled feel on touch is fine, 
    it simply never fires without a hovering pointer. */
 export default function Tilt({ className = '', max = 9, children }) {
   const ref = useRef(null)

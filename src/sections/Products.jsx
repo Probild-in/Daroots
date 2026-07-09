@@ -4,14 +4,14 @@ import Tilt from '../components/Tilt'
 import { rugImg } from '../lib/patterns'
 
 const PRODUCTS = [
-  ['Isfahan Medallion', 'Silk & wool · 8×10 ft', 'isfahan'],
-  ['Tabriz Floral', 'Hand-knotted · 9×12 ft', 'tabriz'],
-  ['Qom Silk', 'Pure silk · 6×9 ft', 'qom'],
-  ['Kashan Garden', 'Wool pile · 8×11 ft', 'kashan'],
-  ['Ardabil Star', 'Wool & silk · 10×14 ft', 'ardabil'],
-  ['Heriz Camel', 'Wool pile · 9×12 ft', 'heriz'],
-  ['Bijar Herati', 'Hand-knotted · 7×10 ft', 'bijar'],
-  ['Bidjar Modern', 'Wool pile · 6×9 ft', 'bidjar'],
+  ['Spiral Sphere', 'Hand Tufted', 'spiral'],
+  ['Warmth', 'Hand Tufted', 'warmth'],
+  ['Planets', 'Hand Tufted', 'planets'],
+  ['Kazak 2014', 'Flat Weave', 'kazak'],
+  ['Madhubani', 'Hand Knotted', 'madhubani'],
+  ['Kemet', 'Hand Knotted', 'kemet'],
+  ['Aspen 07', 'Handloom', 'aspen'],
+  ['PS Stripes', 'Flat Weave', 'stripes'],
 ]
 
 export default function Products() {
@@ -19,8 +19,8 @@ export default function Products() {
     <Section
       id="products"
       className="pad"
-      photo="/rugs/tabriz.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.52), rgba(12,5,4,0.7))"
+      photo="/rugs/hk.jpg"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
     >
       <div className="wrap">
         <div className="section-head" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 20 }}>

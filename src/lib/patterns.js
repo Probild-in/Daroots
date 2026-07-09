@@ -9,21 +9,70 @@
 
 const enc = (svg) => `url("data:image/svg+xml,${encodeURIComponent(svg)}")`
 
-/* Real carpet photography in /public/rugs.
-   Swap any of these paths for your own product photos — the filenames are
-   all that the sections reference. */
+/* Real Daroots product photography in /public/rugs, grouped by weave.
+   Swap any path for another product photo, the filenames are all the
+   sections reference. */
 export const RUGS = {
-  persian: '/rugs/hero-persian.jpg',
-  ardabil: '/rugs/ardabil.jpg',
-  heriz: '/rugs/heriz.jpg',
-  tabriz: '/rugs/tabriz.jpg',
-  kashan: '/rugs/kashan-silk.jpg',
-  isfahan: '/rugs/isfahan.jpg',
-  bijar: '/rugs/bijar.jpg',
-  qom: '/rugs/qom-silk.jpg',
-  bidjar: '/rugs/bidjar-modern.jpg',
+  // section backgrounds
+  hero: '/rugs/hero.jpg',
+  ht: '/rugs/ht.jpg',
+  hk: '/rugs/hk.jpg',
+  fw: '/rugs/fw.jpg',
+  hl: '/rugs/hl.jpg',
+  drama: '/rugs/drama.jpg',
+  neutral: '/rugs/neutral.jpg',
+  medallion: '/rugs/medallion.jpg',
+  // named products / tiles
+  warmth: '/rugs/p-warmth.jpg',
+  spiral: '/rugs/p-spiral.jpg',
+  planets: '/rugs/p-planets.jpg',
+  marbles: '/rugs/p-marbles.jpg',
+  lion: '/rugs/p-lion.jpg',
+  kazak: '/rugs/p-kazak.jpg',
+  kazak909: '/rugs/p-kazak909.jpg',
+  stripes: '/rugs/p-stripes.jpg',
+  ikat: '/rugs/p-ikat.jpg',
+  madhubani: '/rugs/p-madhubani.jpg',
+  kemet: '/rugs/p-kemet.jpg',
+  moroccan: '/rugs/p-moroccan.jpg',
+  aspen: '/rugs/p-aspen.jpg',
+  aspen6: '/rugs/p-aspen6.jpg',
+  teal: '/rugs/p-teal.jpg',
+  colorblock: '/rugs/p-colorblock.jpg',
 }
 export const rugImg = (n) => `url("${RUGS[n] || n}")`
+
+/* The four Daroots weaves, used by the Collections section. */
+export const CATEGORIES = [
+  {
+    key: 'hand-tufted',
+    name: 'Hand Tufted',
+    tag: 'Artistry underfoot',
+    img: '/rugs/ht.jpg',
+    desc: 'Bold, painterly designs punched by hand, colour and pattern with no limits.',
+  },
+  {
+    key: 'hand-knotted',
+    name: 'Hand Knotted',
+    tag: 'The heirloom weave',
+    img: '/rugs/medallion.jpg',
+    desc: 'Knot by knot on the loom, over months, the most enduring rug we make.',
+  },
+  {
+    key: 'flat-weaves',
+    name: 'Flat Weaves',
+    tag: 'Reversible & light',
+    img: '/rugs/fw.jpg',
+    desc: 'Kilims, dhurries, and kazaks, flat, reversible, and rich with geometry.',
+  },
+  {
+    key: 'handloom',
+    name: 'Handloom',
+    tag: 'Modern texture',
+    img: '/rugs/hl.jpg',
+    desc: 'Loom-woven contemporary pieces, quiet melange colour and tactile pile.',
+  },
+]
 
 // Bright, vivid Persian-carpet palettes (ground g, primary a, secondary b, accent c)
 export const PAL = {

@@ -6,13 +6,13 @@ export default function YourDesign() {
     <Section
       id="your-design"
       className="pad band"
-      photo="/rugs/qom-silk.jpg"
-      pos="center 20%"
+      photo="/rugs/drama.jpg"
+      pos="center 30%"
       scrim="linear-gradient(110deg, rgba(12,5,4,0.78) 34%, rgba(12,5,4,0.4))"
     >
       <div className="wrap split">
         <div>
-          <Reveal><span className="eyebrow">Bespoke commissions</span></Reveal>
+          <Reveal><span className="eyebrow">Create your design</span></Reveal>
           <Reveal delay={80}>
             <h2 className="display mt-s">
               Your Design. <br /><em>Our Craft.</em>
@@ -20,12 +20,12 @@ export default function YourDesign() {
           </Reveal>
           <Reveal delay={160}>
             <p className="lede mt-s">
-              Some ideas deserve more than a shelf pick. Hand us a mood, a heirloom, or an
-              architect's drawing — we translate it into a rug woven only once, for you.
+              Some ideas deserve more than a shelf pick. Hand us a mood, an heirloom, or an
+              architect's drawing, and we translate it into a rug woven only once, for you.
             </p>
           </Reveal>
           <Reveal delay={220}>
-            <a className="btn mt-m" href="#contact">Start a commission <span className="btn__arrow">→</span></a>
+            <a className="btn mt-m" href="#contact">Let's create your design <span className="btn__arrow">→</span></a>
           </Reveal>
         </div>
 

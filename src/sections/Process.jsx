@@ -2,7 +2,7 @@ import Section from '../components/Section'
 import Reveal from '../components/Reveal'
 
 const STEPS = [
-  ['Design', 'A cartoon is drawn to scale — every knot mapped before wool ever touches the loom.'],
+  ['Design', 'A cartoon is drawn to scale, every knot mapped before wool ever touches the loom.'],
   ['Material selection', 'Fleece is sorted, hand-spun, and dyed in small batches for depth of colour.'],
   ['Hand weaving', 'Artisans tie each knot by hand across months, reading the design row by row.'],
   ['Finishing', 'The pile is clipped, carved, and evened to reveal the pattern in relief.'],
@@ -15,7 +15,7 @@ export default function Process() {
     <Section
       id="process"
       className="pad"
-      photo="/rugs/heriz.jpg"
+      photo="/rugs/hk.jpg"
       scrim="linear-gradient(180deg, rgba(12,5,4,0.6), rgba(12,5,4,0.76))"
     >
       <div className="wrap">

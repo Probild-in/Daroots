@@ -17,7 +17,7 @@ export default function Contact() {
           <Reveal><span className="eyebrow" style={{ color: 'var(--gold-soft)' }}>Let's begin</span></Reveal>
           <Reveal delay={80}>
             <h2 className="display mt-s">
-              Request a Catalogue <br /><em>or Begin a Commission</em>
+              Request a Catalogue <br /><em>or Create Your Design</em>
             </h2>
           </Reveal>
           <Reveal delay={140}>
@@ -52,7 +52,7 @@ export default function Contact() {
                 <label htmlFor="i">Interest</label>
                 <select id="i" name="interest">
                   <option>Catalogue request</option>
-                  <option>Custom commission</option>
+                  <option>Create your design</option>
                   <option>Trade / wholesale</option>
                   <option>Hospitality project</option>
                 </select>

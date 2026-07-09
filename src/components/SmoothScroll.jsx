@@ -13,6 +13,7 @@ export default function SmoothScroll() {
     if (reduce) return
 
     const lenis = new Lenis({ lerp: 0.09, smoothWheel: true, wheelMultiplier: 1 })
+    window.__lenis = lenis
     lenis.on('scroll', ScrollTrigger.update)
 
     const raf = (time) => lenis.raf(time * 1000)

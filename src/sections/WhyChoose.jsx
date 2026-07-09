@@ -2,11 +2,11 @@ import Section from '../components/Section'
 import Reveal from '../components/Reveal'
 
 const FEATURES = [
-  ['Hand-knotted craft', 'Every rug is tied knot by knot — no machines, no shortcuts. The irregular beauty is the signature.'],
+  ['Hand-knotted craft', 'Every rug is tied knot by knot: no machines, no shortcuts. The irregular beauty is the signature.'],
   ['Natural materials', 'Highland wool, mulberry silk, and cotton, coloured with vegetable and mineral dyes.'],
   ['Worldwide shipping', 'Insured, documented export to 40+ countries, with customs handled end to end.'],
   ['Export quality', 'Each piece is graded, washed, and inspected against a fixed standard before it leaves.'],
-  ['Custom commissions', 'Your size, palette, and motif — sampled and approved before a single knot is tied.'],
+  ['Create your design', 'Your size, palette, and motif, sampled and approved before a single knot is tied.'],
   ['Trade programme', 'Dedicated pricing and lead times for designers, architects, and hospitality buyers.'],
 ]
 
@@ -15,7 +15,7 @@ export default function WhyChoose() {
     <Section
       id="why"
       className="pad"
-      photo="/rugs/bijar.jpg"
+      photo="/rugs/hl.jpg"
       scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
     >
       <div className="wrap">

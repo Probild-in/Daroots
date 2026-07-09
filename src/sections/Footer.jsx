@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
+
 const COLS = [
-  ['Explore', [['Collections', '#collections'], ['Featured products', '#products'], ['Materials', '#materials'], ['Process', '#process']]],
-  ['Company', [['Our story', '#craft'], ['Installations', '#installations'], ['Why Daroots', '#why'], ['Contact', '#contact']]],
-  ['Trade', [['Custom rugs', '#your-design'], ['Wholesale', '#contact'], ['Catalogue', '#contact'], ['Shipping', '#contact']]],
+  ['Collections', [['Hand Tufted', '/collections/hand-tufted'], ['Hand Knotted', '/collections/hand-knotted'], ['Flat Weaves', '/collections/flat-weaves'], ['Handloom', '/collections/handloom']]],
+  ['Company', [['Our story', '/#craft'], ['Installations', '/#installations'], ['Why Daroots', '/#why'], ['Contact', '#contact']]],
+  ['Trade', [['Custom rugs', '/#your-design'], ['Wholesale', '#contact'], ['Catalogue', '#contact'], ['Shipping', '#contact']]],
 ]
 
 export default function Footer() {
@@ -11,7 +13,8 @@ export default function Footer() {
         <div className="footer__logo">
           <img src="/logos/daroots-full-cream.svg" alt="Daroots" />
           <p className="muted" style={{ maxWidth: '34ch' }}>
-            Hand-knotted carpets, woven in Bhadohi and exported to the world's finest spaces since 1948.
+            Hand-tufted, hand-knotted, flat-weave, and handloom rugs, woven in the Bhadohi-Mirzapur
+            belt and exported to the world's finest spaces since 1948.
           </p>
         </div>
         {COLS.map(([title, links]) => (
@@ -19,7 +22,9 @@ export default function Footer() {
             <h4>{title}</h4>
             <ul>
               {links.map(([label, href]) => (
-                <li key={label}><a href={href}>{label}</a></li>
+                <li key={label}>
+                  {href.startsWith('/') ? <Link to={href}>{label}</Link> : <a href={href}>{label}</a>}
+                </li>
               ))}
             </ul>
           </div>
