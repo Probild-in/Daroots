@@ -76,12 +76,15 @@ export default async function handler(req, res) {
 
     return res.status(200).json({ success: true })
   } catch (err) {
+    console.error('CONTACT_FORM_ERROR:', err)
     const tooBig = /maxFileSize|exceeded/i.test(err?.message || '')
     return res.status(tooBig ? 413 : 500).json({
       success: false,
       message: tooBig
         ? 'Design file is too large (max 5 MB). Please email it to info@daroots.in or share a link.'
         : 'Sorry, the message could not be sent. Please email info@daroots.in directly.',
+      // TEMPORARY debug detail — remove once the form is confirmed working:
+      debug: `${err?.code || ''} ${err?.message || err}`.trim(),
     })
   }
 }

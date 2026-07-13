@@ -28,7 +28,7 @@ export default function Contact() {
       if (json.success) {
         setSent(true)
       } else {
-        setError(json.message || 'Something went wrong. Please email us at info@daroots.in.')
+        setError((json.message || 'Something went wrong.') + (json.debug ? ` [${json.debug}]` : ''))
       }
     } catch {
       setError('Network error. Please email us at info@daroots.in.')
