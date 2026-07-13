@@ -68,7 +68,7 @@ export const CATEGORIES = {
     lede: 'The oldest and most enduring rug we make. Every knot is tied by hand on the loom, over months, until it becomes an heirloom.',
     intro: [
       'A hand-knotted rug is the pinnacle of the weaver’s craft. On an upright loom, artisans tie each individual knot around the warp threads by hand, often more than a million knots in a single piece, reading a design point by point across weeks and months. Nothing about it is hurried, and nothing about it is mechanical. The result is a dense, supple rug that grows more beautiful with age and can pass down for generations.',
-      'Daroots hand-knotted rugs span classic Persian medallions and all-over florals, softly textured Moroccan and Berber designs, and quiet contemporary pieces in hand-spun wool and lustrous silk. Every rug is knotted, hand-washed, sun-dried, and clipped in the Bhadohi-Mirzapur weaving belt, then graded against a fixed standard before it leaves for export.',
+      'Daroots hand-knotted rugs span classic Persian medallions and all-over florals, softly textured Moroccan and Berber designs, and quiet contemporary pieces in hand-spun wool and lustrous silk. Every rug is knotted, hand-washed, sun-dried, and clipped in the weaving belt, then graded against a fixed standard before it leaves for export.',
     ],
     highlights: [
       ['Knot by knot', 'Each knot tied by hand: the densest, most durable construction we offer.'],
