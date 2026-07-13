@@ -72,6 +72,13 @@ export const CATEGORIES = [
     img: '/rugs/hl.jpg',
     desc: 'Loom-woven contemporary pieces, quiet melange colour and tactile pile.',
   },
+  {
+    key: 'coco-coir',
+    name: 'Coco & Coir',
+    tag: 'Natural & hard-wearing',
+    img: '/rugs/coco-cats.jpg',
+    desc: 'Rugged coconut-fibre doormats and rugs, printed or natural and built to last.',
+  },
 ]
 
 // Bright, vivid Persian-carpet palettes (ground g, primary a, secondary b, accent c)

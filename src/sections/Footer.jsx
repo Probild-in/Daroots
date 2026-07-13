@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const COLS = [
-  ['Collections', [['Hand Tufted', '/collections/hand-tufted'], ['Hand Knotted', '/collections/hand-knotted'], ['Flat Weaves', '/collections/flat-weaves'], ['Handloom', '/collections/handloom']]],
+  ['Collections', [['Hand Tufted', '/collections/hand-tufted'], ['Hand Knotted', '/collections/hand-knotted'], ['Flat Weaves', '/collections/flat-weaves'], ['Handloom', '/collections/handloom'], ['Coco & Coir', '/collections/coco-coir']]],
   ['Company', [['Our story', '/#craft'], ['Installations', '/#installations'], ['Why Daroots', '/#why'], ['Contact', '#contact']]],
   ['Trade', [['Custom rugs', '/#your-design'], ['Wholesale', '#contact'], ['Catalogue', '#contact'], ['Shipping', '#contact']]],
 ]
@@ -12,10 +12,6 @@ export default function Footer() {
       <div className="wrap footer__top">
         <div className="footer__logo">
           <img src="/logos/daroots-full-cream.svg" alt="Daroots" />
-          <p className="muted" style={{ maxWidth: '34ch' }}>
-            Hand-tufted, hand-knotted, flat-weave, and handloom rugs, woven in the Bhadohi-Mirzapur
-            belt and exported to the world's finest spaces since 1948.
-          </p>
         </div>
         {COLS.map(([title, links]) => (
           <div key={title}>
@@ -33,6 +29,10 @@ export default function Footer() {
       <div className="wrap footer__bar">
         <span>© {new Date().getFullYear()} Daroots Carpets. All rights reserved.</span>
         <span>Handwoven in India · Shipped worldwide</span>
+      </div>
+      <div className="wrap footer__credits">
+        Fibre photos via Wikimedia Commons: bamboo (snapsbycw), cotton (Michael Bass-Deschênes),
+        jute (Biswarup Ganguly), mohair (AnnaKika) CC BY 2.0/3.0; coir (TheOilLamp) CC BY-SA 4.0.
       </div>
     </footer>
   )

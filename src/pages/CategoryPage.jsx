@@ -22,7 +22,7 @@ export default function CategoryPage() {
   }
 
   const canonical = `https://daroots.com/collections/${cat.slug}`
-  const others = CATEGORY_LIST.filter((s) => s !== slug).map((s) => CATEGORIES[s])
+  const others = CATEGORY_LIST.filter((s) => s !== slug).map((s) => CATEGORIES[s]).slice(0, 3)
 
   const jsonld = [
     {

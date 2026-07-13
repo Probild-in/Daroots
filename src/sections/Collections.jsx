@@ -15,14 +15,14 @@ export default function Collections() {
       <div className="wrap">
         <div className="section-head center">
           <Reveal>
-            <span className="eyebrow">Four ways we weave</span>
+            <span className="eyebrow">Five ways we craft</span>
           </Reveal>
           <Reveal delay={80}>
             <h2 className="display">Our Collections</h2>
           </Reveal>
         </div>
 
-        <div className="cat-grid">
+        <div className="cat-grid cat-grid--home">
           {CATEGORIES.map((c, i) => (
             <Reveal key={c.key} delay={(i % 2) * 90}>
               <Tilt max={7}>

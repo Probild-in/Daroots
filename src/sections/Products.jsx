@@ -1,17 +1,16 @@
 import Section from '../components/Section'
 import Reveal from '../components/Reveal'
 import Tilt from '../components/Tilt'
-import { rugImg } from '../lib/patterns'
 
 const PRODUCTS = [
-  ['Spiral Sphere', 'Hand Tufted', 'spiral'],
-  ['Warmth', 'Hand Tufted', 'warmth'],
-  ['Planets', 'Hand Tufted', 'planets'],
-  ['Kazak 2014', 'Flat Weave', 'kazak'],
-  ['Madhubani', 'Hand Knotted', 'madhubani'],
-  ['Kemet', 'Hand Knotted', 'kemet'],
-  ['Aspen 07', 'Handloom', 'aspen'],
-  ['PS Stripes', 'Flat Weave', 'stripes'],
+  ['Aeon Wing', 'Hand Tufted', '/rugs/ht-aeon-wing.jpg'],
+  ['Blue Swirls', 'Hand Tufted', '/rugs/ht-blue-swirls.jpg'],
+  ['Safari Spectrum', 'Hand Tufted', '/rugs/ht-safari-spectrum.jpg'],
+  ['Sacred Quill', 'Hand Tufted', '/rugs/ht-sacred-quill.jpg'],
+  ['Butterfly Rest', 'Hand Tufted', '/rugs/ht-butterfly-rest.jpg'],
+  ['Colored Strata', 'Hand Tufted', '/rugs/ht-colored-strata.jpg'],
+  ['Grey Ammonite', 'Hand Tufted', '/rugs/ht-grey-ammonite.jpg'],
+  ['Ink Splatter', 'Hand Tufted', '/rugs/ht-ink-splatter.jpg'],
 ]
 
 export default function Products() {
@@ -38,13 +37,12 @@ export default function Products() {
             <Reveal key={name} delay={(i % 4) * 70}>
               <Tilt>
                 <div className="tile">
-                  <div className="tile__rug" style={{ '--rug': rugImg(img) }} />
+                  <div className="tile__rug" style={{ backgroundImage: `url("${img}")` }} />
                   <div className="tile__glow" />
                   <div className="tile__meta">
                     <div className="t">{name}</div>
                     <div className="s">{spec}</div>
                   </div>
-                  <span className="repl">Replace with product photo</span>
                 </div>
               </Tilt>
             </Reveal>

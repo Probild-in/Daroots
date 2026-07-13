@@ -3,15 +3,38 @@ import Reveal from '../components/Reveal'
 
 const INTERESTS = ['Catalogue request', 'Create your design', 'Trade / wholesale', 'Hospitality project']
 
+const MAX_FILE_MB = 5
+
 export default function Contact() {
   const [sent, setSent] = useState(false)
   const [interest, setInterest] = useState(INTERESTS[0])
   const [fileName, setFileName] = useState('')
+  const [error, setError] = useState('')
+  const [sending, setSending] = useState(false)
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault()
-    // Front-end only demo. Wire to your email/CRM endpoint later (see README).
-    setSent(true)
+    setError('')
+    const data = new FormData(e.target)
+    const file = data.get('design')
+    if (file && file.size > MAX_FILE_MB * 1024 * 1024) {
+      setError(`Design file is too large (max ${MAX_FILE_MB} MB). Please email it to info@daroots.in or share a link in the message.`)
+      return
+    }
+    setSending(true)
+    try {
+      const res = await fetch('/api/contact', { method: 'POST', body: data })
+      const json = await res.json()
+      if (json.success) {
+        setSent(true)
+      } else {
+        setError(json.message || 'Something went wrong. Please email us at info@daroots.in.')
+      }
+    } catch {
+      setError('Network error. Please email us at info@daroots.in.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -32,9 +55,26 @@ export default function Contact() {
           </Reveal>
           <Reveal delay={200}>
             <div className="contact-info mt-m">
-              <div className="row"><div className="k">Email</div><div className="v">info@daroots.in</div></div>
-              <div className="row"><div className="k">WhatsApp</div><div className="v">+91 98765 43210</div></div>
-              <div className="row"><div className="k">Atelier</div><div className="v">Uttar Pradesh, India</div></div>
+              <div className="row">
+                <div className="k">Email</div>
+                <div className="v">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=info@daroots.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    info@daroots.in
+                  </a>
+                </div>
+              </div>
+              <div className="row">
+                <div className="k">WhatsApp</div>
+                <div className="v">
+                  <a href="https://wa.me/918604827114" target="_blank" rel="noopener noreferrer">+91 86048 27114</a>,{' '}
+                  <a href="https://wa.me/916388441416" target="_blank" rel="noopener noreferrer">+91 6388 441 416</a>
+                </div>
+              </div>
+              <div className="row"><div className="k">Atelier</div><div className="v">Kanpur, India</div></div>
             </div>
           </Reveal>
         </div>
@@ -49,6 +89,7 @@ export default function Contact() {
             </div>
           ) : (
             <form className="form" onSubmit={onSubmit}>
+              <input type="checkbox" name="botcheck" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} />
               <div className="field"><label htmlFor="n">Name</label><input id="n" name="name" required /></div>
               <div className="field"><label htmlFor="e">Email</label><input id="e" name="email" type="email" required /></div>
               <div className="field"><label htmlFor="c">Country</label><input id="c" name="country" /></div>
@@ -100,7 +141,12 @@ export default function Contact() {
                 <textarea id="m" name="message" placeholder="Room size, colours, timeline…" />
               </div>
               <div className="full">
-                <button className="btn" type="submit">Send enquiry <span className="btn__arrow">→</span></button>
+                <button className="btn" type="submit" disabled={sending}>
+                  {sending ? 'Sending…' : 'Send enquiry'} <span className="btn__arrow">→</span>
+                </button>
+                {error && (
+                  <p className="form__error" role="alert">{error}</p>
+                )}
               </div>
             </form>
           )}

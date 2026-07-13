@@ -12,7 +12,6 @@ export default function Hero() {
         scrim="linear-gradient(180deg, rgba(12,5,4,0.58) 0%, rgba(12,5,4,0.62) 42%, rgba(12,5,4,0.95) 100%)"
       >
         <div className="wrap hero__inner">
-          <span className="eyebrow reveal is-in">Handwoven in the Bhadohi-Mirzapur belt · Exported to 40+ countries</span>
           <h1 className="display mt-s">
             A Legacy You Can <em>Walk On</em>
           </h1>

@@ -1,7 +1,7 @@
 /* Category content + SEO copy for each Daroots weave.
    Written content is here so it's easy to edit in one place. */
 
-export const CATEGORY_LIST = ['hand-tufted', 'hand-knotted', 'flat-weaves', 'handloom']
+export const CATEGORY_LIST = ['hand-tufted', 'hand-knotted', 'flat-weaves', 'handloom', 'coco-coir']
 
 export const CATEGORIES = {
   'hand-tufted': {
@@ -193,6 +193,50 @@ export const CATEGORIES = {
       ['What makes handloom different from hand-tufted?', 'Handloom is woven row by row on a loom (structure built into the weave), while tufting punches pile into a backing. Handloom suits texture and tonal colour; tufting suits bold, painted designs.'],
       ['Are handloom rugs soft?', 'Yes. We tune the fibre and pile for a soft, tactile hand, from plush cut pile to natural loops.'],
       ['Can I match a specific colour?', 'We space-dye and blend yarns to hit a target colourway for your piece.'],
+    ],
+  },
+
+  'coco-coir': {
+    slug: 'coco-coir',
+    name: 'Coco & Coir',
+    weave: 'Coco & Coir Rugs',
+    tag: 'Natural & hard-wearing',
+    heroImg: '/rugs/coco-strawberry.jpg',
+    roomImg: '/rugs/coco-cats.jpg',
+    cardImg: '/rugs/coco-cats.jpg',
+    seoTitle: 'Coco & Coir Rugs, Natural Coconut Fibre Rugs & Mats | Daroots',
+    seoDescription:
+      'Daroots coco and coir rugs: hard-wearing natural coconut-fibre floor coverings, doormats, and area rugs. Rugged, eco-friendly texture in natural and bleached tones, exported worldwide.',
+    kicker: 'Natural coconut fibre',
+    headline: 'Coco & Coir Rugs',
+    lede: 'Hard-wearing coconut-fibre doormats and mats: tough underfoot, naturally textured, and finished in clean naturals or playful printed designs.',
+    intro: [
+      'Coir is the coarse, springy fibre drawn from the husk of the coconut, and coco matting is one of the oldest natural floor coverings in the world. Twisted into hard yarns and woven on the loom, it makes a rug that is exceptionally tough, water-tolerant, and richly textured, the natural choice for entryways, hallways, verandas, and any floor that takes heavy footfall.',
+      'At Daroots we weave coir on its own and blend it with cotton and jute for softer handloom pieces and defined borders. Left in its warm, undyed tone or bleached to a paler natural, coir brings an honest, grounding texture that layers beautifully under finer rugs and anchors relaxed, organic interiors.',
+    ],
+    highlights: [
+      ['Built to last', 'Dense coconut-husk fibre shrugs off heavy foot traffic and rough use.'],
+      ['Printed & shaped designs', 'Bold printed motifs and die-cut shapes, from strawberries to cats and dogs.'],
+      ['Eco & renewable', 'A by-product of the coconut harvest: biodegradable and sustainable.'],
+      ['Entryway-ready', 'Traps dirt and moisture, ideal for doormats, halls, and verandas.'],
+    ],
+    specs: [
+      ['Technique', 'Loom-woven coir, coir & cotton blends'],
+      ['Material', 'Coconut-husk coir, cotton & jute blends'],
+      ['Finish', 'Natural or bleached tone, cotton-bound edges'],
+      ['Best for', 'Entryways, halls, verandas, layering'],
+      ['Lead time', 'Typically 3-6 weeks'],
+    ],
+    products: [
+      ['Tabby Cat', 'Shaped coir doormat', '/rugs/coco-cat.jpg'],
+      ['Cat Parade', 'Printed coir doormat', '/rugs/coco-cats.jpg'],
+      ['Cool Cat', 'Round coir doormat', '/rugs/coco-coolcat.jpg'],
+      ['Puppy', 'Shaped coir doormat', '/rugs/coco-dog.jpg'],
+    ],
+    faqs: [
+      ['Are coir rugs hard-wearing?', 'Very. Coir is one of the toughest natural fibres, which is why it is used for doormats and high-traffic entryways. It stands up to heavy footfall for years.'],
+      ['Where should I use a coco or coir rug?', 'They are ideal for entryways, hallways, kitchens, verandas, and covered outdoor areas, and they layer beautifully under a finer wool or silk rug.'],
+      ['Can coir rugs be made to a custom size?', 'Yes. We weave coir to your size, with natural or bleached tone and optional cotton-bound borders.'],
     ],
   },
 }

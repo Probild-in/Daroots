@@ -578,6 +578,10 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 
 /* four-weave collection cards */
 .cat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+/* homepage collections: centered flex so an odd last row (e.g. 5th card) centers */
+.cat-grid--home { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.cat-grid--home > * { flex: 0 1 calc(50% - 10px); min-width: 280px; }
+@media (max-width: 680px){ .cat-grid--home > * { flex-basis: 100%; } }
 @media (max-width: 680px){ .cat-grid { grid-template-columns: 1fr; } }
 .cat-card {
   position: relative; display: block; overflow: hidden; border-radius: 4px;
@@ -675,6 +679,17 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 .stars { color: var(--gold); letter-spacing: 0.3em; margin-bottom: 22px; }
 @media (min-width: 720px){ .quote { max-width: 40ch; } .quote blockquote { max-width: 34ch; } }
 
+/* wider variant for longer, rotating testimonials */
+.quote--wide { max-width: 60ch; }
+.quote--wide .quote__title { font-family: var(--font-display); font-style: italic; color: var(--gold-soft); font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.2; margin-bottom: 18px; }
+.quote--wide blockquote { font-size: clamp(1rem, 1.55vw, 1.28rem); font-style: normal; line-height: 1.6; max-width: 58ch; color: var(--cream-dim); }
+@media (min-width: 720px){ .quote--wide { max-width: 60ch; } .quote--wide blockquote { max-width: 58ch; } }
+.quote__fade { animation: quoteIn .7s var(--ease) both; }
+@keyframes quoteIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.quote__dots { display: flex; gap: 10px; justify-content: center; margin-top: 30px; }
+.quote__dots button { width: 9px; height: 9px; border-radius: 50%; background: rgba(243,233,220,0.28); transition: background .3s, transform .3s; }
+.quote__dots button.is-active { background: var(--gold); transform: scale(1.25); }
+
 /* your-design band */
 .band { position: relative; }
 .band .split { align-items: center; }
@@ -698,6 +713,8 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 }
 .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--gold); background: rgba(255,255,255,0.1); }
 .field textarea { resize: vertical; min-height: 110px; }
+.btn[disabled] { opacity: 0.6; cursor: default; pointer-events: none; }
+.form__error { margin-top: 12px; color: #e6a5a0; font-size: 0.86rem; }
 
 /* hover-open custom dropdown */
 .hoverselect { position: relative; cursor: pointer; outline: none; }
@@ -748,6 +765,8 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 .contact-info { display: grid; gap: 26px; }
 .contact-info .row .k { font-size: 0.66rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 6px; }
 .contact-info .row .v { font-family: var(--font-display); font-size: 1.4rem; }
+.contact-info .row .v a { color: inherit; transition: color .3s; }
+.contact-info .row .v a:hover { color: var(--gold); text-decoration: underline; }
 
 /* footer */
 .footer { background: var(--oxblood-900); }
@@ -759,6 +778,7 @@ h3.display { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
 .footer li a { color: var(--cream-mute); font-size: 0.92rem; transition: color .3s; }
 .footer li a:hover { color: var(--cream); }
 .footer__bar { border-top: 1px solid rgba(243,233,220,0.1); padding-block: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 0.74rem; color: var(--cream-mute); letter-spacing: 0.04em; }
+.footer__credits { padding-bottom: 22px; font-size: 0.64rem; line-height: 1.5; color: rgba(205,188,163,0.55); max-width: 78ch; }
 
 /* section intro heading block spacing */
 .section-head { margin-bottom: clamp(40px, 5vw, 68px); }

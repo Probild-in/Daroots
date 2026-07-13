@@ -22,7 +22,7 @@ const ORG_JSONLD = {
   logo: 'https://daroots.com/logos/daroots-icon.svg',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Bhadohi',
+    addressLocality: 'Kanpur',
     addressRegion: 'Uttar Pradesh',
     addressCountry: 'IN',
   },

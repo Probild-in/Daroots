@@ -4,7 +4,7 @@ import Reveal from '../components/Reveal'
 const SHAPES = [
   ['cloud', 'Nimbus', 'Organic die-cut', 'sp-1', 3],
   ['panther', 'Panther', 'Sculpted silhouette', 'sp-2', 8],
-  ['rose', 'Bloom', 'Layered petals', 'sp-3', 4],
+  ['/rugs/coco-dog-cutout.png', 'coco-dog', 'Novelty cut-out', 'sp-3', 4],
   ['sneaker', 'AJ-1', 'Novelty cut-out', 'sp-4', 9],
   ['fan', 'Tide', 'Half-round', 'sp-5', 5],
 ]
@@ -33,7 +33,7 @@ export default function ShapedRugs() {
       <div className="shapes-stage">
         {SHAPES.map(([img, name, tag, cls, speed]) => (
             <figure key={img} className={`shape ${cls}`} data-speed={speed}>
-              <img className="shape__img" src={`/rugs/shapes/${img}.webp`} alt={`${name}, shaped rug`} loading="lazy" />
+              <img className="shape__img" src={img.startsWith('/') ? img : `/rugs/shapes/${img}.webp`} alt={`${name}, shaped rug`} loading="lazy" />
               <figcaption>
                 <span className="shape__name">{name}</span>
                 <span className="shape__tag">{tag}</span>

@@ -6,6 +6,7 @@ const COLLECTIONS = [
   ['Hand Knotted', '/collections/hand-knotted'],
   ['Flat Weaves', '/collections/flat-weaves'],
   ['Handloom', '/collections/handloom'],
+  ['Coco & Coir', '/collections/coco-coir'],
 ]
 const LINKS = [
   ['Craft', '/#craft'],
