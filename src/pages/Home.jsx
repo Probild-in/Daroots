@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Daroots, Handcrafted Rugs for Timeless Spaces</title>
+        <title>Daroots, Handcrafted Rugs, A Legacy You Can Walk On</title>
         <meta
           name="description"
           content="Daroots weaves hand-tufted, hand-knotted, flat-weave, and handloom rugs by hand and exports them worldwide. Heritage carpets and bespoke custom designs for homes, hotels, and galleries."

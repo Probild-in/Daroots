@@ -16,9 +16,9 @@ export default function Hero() {
             A Legacy You Can <em>Walk On</em>
           </h1>
           <p className="lede mt-m">
-            Daroots weaves hand-tufted, hand-knotted, flat-weave, and handloom rugs the slow way, 
-            knot by knot, in wool and silk, and delivers them to homes, hotels, and galleries the
-            world over. Rooted in craft. Made to outlast trends.
+            Daroots weaves a legacy you can walk on: hand-tufted, hand-knotted, flat-weave, and handloom
+            rugs made the slow way, knot by knot, in wool and silk, and delivered to homes, hotels, and
+            galleries the world over. Rooted in craft. Made to outlast trends.
           </p>
           <div className="row-cta">
             <a className="btn" href="#collections">
