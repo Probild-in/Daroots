@@ -9,7 +9,7 @@ export default function Hero() {
         photo="/rugs/hero.jpg"
         pos="center"
         revealOnLoad
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.34) 0%, rgba(12,5,4,0.36) 42%, rgba(12,5,4,0.88) 100%)"
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.58) 0%, rgba(12,5,4,0.62) 42%, rgba(12,5,4,0.95) 100%)"
       >
         <div className="wrap hero__inner">
           <span className="eyebrow reveal is-in">Handwoven in the Bhadohi-Mirzapur belt · Exported to 40+ countries</span>
@@ -25,13 +25,10 @@ export default function Hero() {
             <a className="btn" href="#collections">
               Explore Collections <span className="btn__arrow">→</span>
             </a>
-            <a className="btn btn--ghost" href="#contact">
-              Request a Catalogue
+            <a className="btn btn--ghost" href="#your-design">
+              Share Your Design <span className="btn__arrow">→</span>
             </a>
           </div>
-        </div>
-        <div className="hero__scroll" aria-hidden="true">
-          Scroll to unroll <span />
         </div>
       </Section>
 
@@ -39,7 +36,7 @@ export default function Hero() {
         {[
           ['75+', 'Years of craft'],
           ['40+', 'Export markets'],
-          ['4', 'Weave traditions'],
+          ['5', 'Craft techniques'],
           ['100%', 'Handmade'],
         ].map(([n, l]) => (
           <div className="statbar__item" key={l}>

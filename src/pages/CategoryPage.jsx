@@ -74,7 +74,7 @@ export default function CategoryPage() {
         photo={cat.heroImg}
         pos="center"
         revealOnLoad
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.5) 0%, rgba(12,5,4,0.52) 42%, rgba(12,5,4,0.9) 100%)"
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.34) 0%, rgba(12,5,4,0.4) 45%, rgba(12,5,4,0.74) 100%)"
       >
         <div className="wrap hero__inner">
           <nav className="crumb reveal is-in" aria-label="Breadcrumb">
@@ -93,7 +93,7 @@ export default function CategoryPage() {
 
       {/* Intro + specs */}
       <Section id="cat-intro" className="pad" photo="/rugs/neutral.jpg"
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.72), rgba(12,5,4,0.84))">
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.8), rgba(12,5,4,0.92))">
         <div className="wrap split">
           <div className="head">
             <Reveal><span className="eyebrow">About the weave</span></Reveal>
@@ -124,31 +124,21 @@ export default function CategoryPage() {
 
       {/* Room scene lifestyle mockup */}
       <Section id="cat-room" className="pad" photo="/rugs/hk.jpg"
-        scrim="linear-gradient(180deg, rgba(10,4,3,0.8), rgba(10,4,3,0.9))">
+        scrim="linear-gradient(180deg, rgba(10,4,3,0.88), rgba(10,4,3,0.95))">
         <div className="wrap">
           <div className="section-head center">
             <Reveal><span className="eyebrow">In your space</span></Reveal>
             <Reveal delay={80}><h2 className="display">Made to live with</h2></Reveal>
           </div>
           <Reveal>
-            <div className="room-scene">
-              <div className="room-scene__wall" />
-              <div className="room-scene__art" style={{ backgroundImage: `url("${(cat.products[1] || cat.products[0])[2]}")` }} />
-              <div className="room-scene__floor" />
-              <div className="room-scene__baseboard" />
-              <div className="room-scene__sofa" />
-              <svg className="room-scene__plant" viewBox="0 0 80 150" aria-hidden="true">
-                <rect x="29" y="104" width="22" height="40" rx="3" fill="#4e3320" />
-                <path d="M40 104 C16 74 16 40 30 16 M40 104 C64 74 64 40 50 16 M40 104 C40 66 40 36 40 10"
-                  stroke="#3d7a5f" strokeWidth="6" fill="none" strokeLinecap="round" />
-              </svg>
-              <div className="room-scene__rug" style={{ backgroundImage: `url("${cat.products[0][2]}")` }} />
+            <div className="room-photo">
+              <img src={cat.roomImg} alt={`${cat.name} rug styled in a room`} loading="lazy" />
             </div>
           </Reveal>
           <Reveal delay={120}>
             <p className="muted" style={{ textAlign: 'center', maxWidth: '54ch', marginInline: 'auto', marginTop: 26 }}>
-              Every {cat.name.toLowerCase()} rug is made to order in your size and palette. Ask for a
-              staged room render or a physical sample before you commit.
+              Every {cat.name.toLowerCase()} rug is made to order in your size and palette. Share your
+              design or ask for a staged room render to see it in your space.
             </p>
           </Reveal>
         </div>
@@ -156,7 +146,7 @@ export default function CategoryPage() {
 
       {/* Products */}
       <Section id="cat-products" className="pad" photo="/rugs/hk.jpg"
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.62), rgba(12,5,4,0.76))">
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.82), rgba(12,5,4,0.95))">
         <div className="wrap">
           <div className="section-head">
             <Reveal><span className="eyebrow">The {cat.name} range</span></Reveal>
@@ -180,7 +170,7 @@ export default function CategoryPage() {
 
       {/* Highlights */}
       <Section id="cat-why" className="pad" photo={cat.heroImg}
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.74), rgba(12,5,4,0.86))">
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.82), rgba(12,5,4,0.94))">
         <div className="wrap">
           <div className="section-head center">
             <Reveal><span className="eyebrow">Why {cat.name}</span></Reveal>
@@ -188,7 +178,7 @@ export default function CategoryPage() {
           </div>
           <div className="features">
             {cat.highlights.map(([t, b], i) => (
-              <Reveal key={t} className="feature" delay={(i % 3) * 60}>
+              <Reveal key={t} className="feature" delay={(i % 2) * 60}>
                 <span className="feature__n">{String(i + 1).padStart(2, '0')}</span>
                 <h3>{t}</h3>
                 <p>{b}</p>
@@ -200,7 +190,7 @@ export default function CategoryPage() {
 
       {/* FAQ */}
       <Section id="cat-faq" className="pad" photo="/rugs/neutral.jpg"
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.78), rgba(12,5,4,0.88))">
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.86), rgba(12,5,4,0.95))">
         <div className="wrap faq-wrap">
           <div className="section-head center">
             <Reveal><span className="eyebrow">Good to know</span></Reveal>
@@ -219,7 +209,7 @@ export default function CategoryPage() {
 
       {/* Explore other collections */}
       <Section id="cat-others" className="pad-sm" photo="/rugs/hk.jpg"
-        scrim="linear-gradient(180deg, rgba(12,5,4,0.72), rgba(12,5,4,0.82))">
+        scrim="linear-gradient(180deg, rgba(12,5,4,0.8), rgba(12,5,4,0.9))">
         <div className="wrap">
           <div className="section-head center">
             <Reveal><span className="eyebrow">Keep exploring</span></Reveal>

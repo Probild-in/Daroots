@@ -27,13 +27,13 @@ export default function Nav() {
   return (
     <header className={`nav ${solid ? 'is-solid' : ''}`}>
       <Link className="nav__logo" to="/" aria-label="Daroots home">
-        <img src="/logos/daroots-full-cream.svg" alt="Daroots" />
+        <img src="/logos/daroots-icon.svg" alt="Daroots" />
       </Link>
 
       <nav className="nav__links" aria-label="Primary">
         <div className="nav__drop">
           <Link to="/#collections" className="nav__droptrigger">
-            Collections <span className="nav__caret">▾</span>
+            Collections
           </Link>
           <div className="nav__menu">
             {COLLECTIONS.map(([label, href]) => (

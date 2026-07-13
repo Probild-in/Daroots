@@ -10,6 +10,7 @@ export const CATEGORIES = {
     weave: 'Hand-Tufted Rugs',
     tag: 'Artistry underfoot',
     heroImg: '/rugs/ht.jpg',
+    roomImg: '/rugs/room-ht.jpg',
     cardImg: '/rugs/ht.jpg',
     seoTitle: 'Hand Tufted Rugs, Custom Designer Wool Rugs | Daroots',
     seoDescription:
@@ -47,7 +48,7 @@ export const CATEGORIES = {
     faqs: [
       ['Can you make a rug in a custom shape?', 'Yes. Hand tufting can be cut to any silhouette: organic shapes, figures, logos, or a shape traced from your space.'],
       ['Can you reproduce my own artwork or a brand design?', 'We regularly tuft original artwork, brand motifs, and client designs. Share a reference and we render it to scale and match colours before production.'],
-      ['How durable are hand-tufted rugs?', 'Very. A latexed backing and dense wool pile stand up to living rooms, hospitality, and high-traffic commercial floors.'],
+      ['How durable are hand-tufted rugs?', 'Very. Dense wool pile stands up to living rooms, hospitality, and high-traffic commercial floors.'],
     ],
   },
 
@@ -57,6 +58,7 @@ export const CATEGORIES = {
     weave: 'Hand-Knotted Rugs',
     tag: 'The heirloom weave',
     heroImg: '/rugs/medallion.jpg',
+    roomImg: '/rugs/room-hk.jpg',
     cardImg: '/rugs/medallion.jpg',
     seoTitle: 'Hand Knotted Rugs, Heirloom Persian & Moroccan Rugs | Daroots',
     seoDescription:
@@ -94,7 +96,7 @@ export const CATEGORIES = {
     faqs: [
       ['Why are hand-knotted rugs more expensive?', 'Each one takes months of skilled hand labour and over a million knots. You are buying an heirloom that lasts generations, not a disposable floor covering.'],
       ['How long will a hand-knotted rug last?', 'With normal care, decades to a century. They are designed to be professionally cleaned and even re-piled or repaired rather than replaced.'],
-      ['Can I order a custom size or design?', 'Yes, any size, palette, or motif. We weave a sample knot for approval before scaling to the full rug.'],
+      ['Can I order a custom size or design?', 'Yes, any size, palette, or motif. Share your design and we weave it to your exact specification.'],
     ],
   },
 
@@ -104,6 +106,7 @@ export const CATEGORIES = {
     weave: 'Flat-Weave Rugs',
     tag: 'Reversible & light',
     heroImg: '/rugs/fw.jpg',
+    roomImg: '/rugs/room-fv.jpg',
     cardImg: '/rugs/fw.jpg',
     seoTitle: 'Flat Weave Rugs, Kilims, Dhurries & Kazak Rugs | Daroots',
     seoDescription:
@@ -151,6 +154,7 @@ export const CATEGORIES = {
     weave: 'Handloom Rugs',
     tag: 'Modern texture',
     heroImg: '/rugs/hl.jpg',
+    roomImg: '/rugs/room-hl.jpg',
     cardImg: '/rugs/hl.jpg',
     seoTitle: 'Handloom Rugs, Modern Textured & Melange Rugs | Daroots',
     seoDescription:
@@ -188,7 +192,7 @@ export const CATEGORIES = {
     faqs: [
       ['What makes handloom different from hand-tufted?', 'Handloom is woven row by row on a loom (structure built into the weave), while tufting punches pile into a backing. Handloom suits texture and tonal colour; tufting suits bold, painted designs.'],
       ['Are handloom rugs soft?', 'Yes. We tune the fibre and pile for a soft, tactile hand, from plush cut pile to natural loops.'],
-      ['Can I match a specific colour?', 'We space-dye and blend yarns to hit a target colourway, and can sample the melange before weaving.'],
+      ['Can I match a specific colour?', 'We space-dye and blend yarns to hit a target colourway for your piece.'],
     ],
   },
 }

@@ -15,7 +15,7 @@ export default function ShapedRugs() {
       id="shaped"
       className="pad"
       photo="/rugs/hk.jpg"
-      scrim="linear-gradient(180deg, rgba(10,4,3,0.86), rgba(10,4,3,0.92))"
+      scrim="linear-gradient(180deg, rgba(10,4,3,0.94), rgba(10,4,3,0.95))"
     >
       <div className="wrap">
         <div className="section-head center">

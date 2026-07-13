@@ -8,7 +8,7 @@ export default function YourDesign() {
       className="pad band"
       photo="/rugs/drama.jpg"
       pos="center 30%"
-      scrim="linear-gradient(110deg, rgba(12,5,4,0.78) 34%, rgba(12,5,4,0.4))"
+      scrim="linear-gradient(110deg, rgba(12,5,4,0.95) 34%, rgba(12,5,4,0.68))"
     >
       <div className="wrap split">
         <div>
@@ -33,7 +33,6 @@ export default function YourDesign() {
           <ul className="checks">
             {[
               ['Consult', 'We map palette, size, and setting with your team.'],
-              ['Sample', 'A woven swatch confirms colour and density before scale-up.'],
               ['Weave', 'Master artisans knot your piece over months, not minutes.'],
               ['Finish', 'Hand-washed, sun-dried, and clipped to bring the pile to life.'],
               ['Deliver', 'Insured door-to-door shipping with full export papers.'],

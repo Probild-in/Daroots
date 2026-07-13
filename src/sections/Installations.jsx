@@ -1,14 +1,11 @@
 import Section from '../components/Section'
 import Reveal from '../components/Reveal'
-import { rugImg } from '../lib/patterns'
 
-const CELLS = [
-  ['m-a', 'marbles'],
-  ['m-b', 'moroccan'],
-  ['m-c', 'kazak909'],
-  ['m-d', 'teal'],
-  ['m-e', 'ikat'],
-  ['m-f', 'colorblock'],
+const INSTALLS = [
+  ['inst-canada.jpg', 'Canada'],
+  ['inst-us.jpg', 'United States'],
+  ['inst-saudi.jpg', 'Saudi Arabia'],
+  ['inst-newzealand.jpg', 'New Zealand'],
 ]
 
 export default function Installations() {
@@ -17,7 +14,7 @@ export default function Installations() {
       id="installations"
       className="pad"
       photo="/rugs/fw.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.8), rgba(12,5,4,0.94))"
     >
       <div className="wrap">
         <div className="section-head">
@@ -25,12 +22,21 @@ export default function Installations() {
           <Reveal delay={80}><h2 className="display mt-s">Installations Worldwide</h2></Reveal>
         </div>
 
-        <div className="masonry">
-          {CELLS.map(([cls, img], i) => (
-            <Reveal key={cls} className={`cell ${cls}`} delay={i * 60}>
-              <div className="tile__rug" style={{ '--rug': rugImg(img) }} />
-              <div className="tile__glow" />
-              <span className="repl">Replace with install photo</span>
+        <div className="installs">
+          {INSTALLS.map(([img, country], i) => (
+            <Reveal key={country} className="install" delay={i * 70}>
+              <img
+                className="install__img"
+                src={`/rugs/${img}`}
+                alt={`Daroots rug installation in ${country}`}
+                loading="lazy"
+              />
+              <span className="install__country">
+                <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                  <path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor" />
+                </svg>
+                {country}
+              </span>
             </Reveal>
           ))}
         </div>

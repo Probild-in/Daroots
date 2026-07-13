@@ -20,7 +20,7 @@ export default function Products() {
       id="products"
       className="pad"
       photo="/rugs/hk.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.55), rgba(12,5,4,0.72))"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.8), rgba(12,5,4,0.94))"
     >
       <div className="wrap">
         <div className="section-head" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 20 }}>

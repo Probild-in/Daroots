@@ -10,7 +10,7 @@ export default function Collections() {
       id="collections"
       className="pad"
       photo="/rugs/neutral.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.62), rgba(12,5,4,0.76))"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.82), rgba(12,5,4,0.95))"
     >
       <div className="wrap">
         <div className="section-head center">
@@ -30,7 +30,6 @@ export default function Collections() {
                   <div className="cat-card__img" style={{ backgroundImage: `url("${c.img}")` }} />
                   <div className="cat-card__glow" />
                   <div className="cat-card__body">
-                    <span className="cat-card__tag">{c.tag}</span>
                     <h3 className="display">{c.name}</h3>
                     <p>{c.desc}</p>
                     <span className="cat-card__cta">View collection →</span>

@@ -1,8 +1,6 @@
 import Section from '../components/Section'
 import Reveal from '../components/Reveal'
-import { rugImg } from '../lib/patterns'
-
-const SWATCHES = ['#7c1224', '#c9a24b', '#1e4a3c', '#1c3a8a', '#f3e9dc']
+import BeforeAfter from '../components/BeforeAfter'
 
 export default function CraftStory() {
   return (
@@ -10,20 +8,17 @@ export default function CraftStory() {
       id="craft"
       className="pad"
       photo="/rugs/medallion.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.62), rgba(12,5,4,0.8))"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.82), rgba(12,5,4,0.95))"
     >
       <div className="wrap split">
         <Reveal>
-          <div className="tile" style={{ aspectRatio: '4 / 5' }}>
-            <div className="tile__rug" style={{ '--rug': rugImg('spiral') }} />
-            <div className="tile__glow" />
-            <span className="tile__tag">On the loom · Bhadohi atelier</span>
-            <div className="tile__meta">
-              <div className="t">The vertical loom</div>
-              <div className="s">18 months · two weavers</div>
-            </div>
-            <span className="repl">Replace with loom photo</span>
-          </div>
+          <BeforeAfter
+            leftImg="/rugs/story-ancient.jpg"
+            rightImg="/rugs/story-modern.jpg"
+            leftLabel="Ancient"
+            rightLabel="Modern"
+            alt="Daroots rug craft"
+          />
         </Reveal>
 
         <div className="head">
@@ -48,13 +43,6 @@ export default function CraftStory() {
               weavers, and finishers who treat each piece as their own. We keep the old motifs alive
               while designing for the rooms of today.
             </p>
-          </Reveal>
-          <Reveal delay={280}>
-            <div className="swatches">
-              {SWATCHES.map((c) => (
-                <span className="swatch" key={c} style={{ background: c }} />
-              ))}
-            </div>
           </Reveal>
         </div>
       </div>

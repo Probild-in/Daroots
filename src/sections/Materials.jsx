@@ -55,7 +55,7 @@ export default function Materials() {
       id="materials"
       className="pad"
       photo="/rugs/neutral.jpg"
-      scrim="linear-gradient(180deg, rgba(12,5,4,0.62), rgba(12,5,4,0.78))"
+      scrim="linear-gradient(180deg, rgba(12,5,4,0.82), rgba(12,5,4,0.95))"
     >
       <div className="wrap">
         <div className="section-head">

@@ -8,7 +8,7 @@ export default function Testimonials() {
       className="pad"
       photo="/rugs/medallion.jpg"
       pos="center 40%"
-      scrim="radial-gradient(75% 90% at 50% 45%, rgba(12,5,4,0.6), rgba(12,5,4,0.82))"
+      scrim="radial-gradient(75% 90% at 50% 45%, rgba(12,5,4,0.82), rgba(12,5,4,0.95))"
     >
       <div className="wrap">
         <Reveal className="quote">
