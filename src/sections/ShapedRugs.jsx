@@ -2,11 +2,11 @@ import Section from '../components/Section'
 import Reveal from '../components/Reveal'
 
 const SHAPES = [
-  ['cloud', 'Nimbus', 'Organic die-cut', 'sp-1', 3],
-  ['panther', 'Panther', 'Sculpted silhouette', 'sp-2', 8],
-  ['/rugs/coco-dog-cutout.png', 'coco-dog', 'Novelty cut-out', 'sp-3', 4],
-  ['sneaker', 'AJ-1', 'Novelty cut-out', 'sp-4', 9],
-  ['fan', 'Tide', 'Half-round', 'sp-5', 5],
+  ['cloud', 'Smoke Pillows', 'Organic die-cut', 'sp-1', 3],
+  ['panther', 'Midnight Predator', 'Sculpted silhouette', 'sp-2', 8],
+  ['/rugs/coco-dog-cutout.png', 'Best Friend', 'Novelty cut-out', 'sp-3', 4],
+  ['sneaker', 'The Street Icon', 'Novelty cut-out', 'sp-4', 9],
+  ['fan', 'Canyon Wave', 'Half-round', 'sp-5', 5],
 ]
 
 export default function ShapedRugs() {
